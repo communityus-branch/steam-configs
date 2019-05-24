@@ -1,0 +1,24 @@
+"GameInfo"
+{
+	game		"CommunityUs"
+	title 		"~"
+  title2		"CommuintyUs"
+	type		singleplayer_only
+	FileSystem
+	{
+		SteamAppId				243730		// This will mount all the GCFs we need (240=CS:S, 220=HL2).
+		
+		SearchPaths
+		{
+			game+mod			project/game/*
+
+			mod+mod_write+default_write_path		|gameinfo_path|.
+
+			game+game_write		sourcetest
+
+			gamebin				sourcetest/bin
+
+			game				|all_source_engine_paths|project
+		}
+	}
+}
